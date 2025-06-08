@@ -23,7 +23,7 @@ function TransactionList({ transactions, onDelete }) {
               <th>Type</th>
               <th>Category</th>
               <th>Description</th>
-              <th>Amount</th>
+              <th>Amount €</th>
               <th>Date</th>
               <th>Action</th>
             </tr>
@@ -34,7 +34,7 @@ function TransactionList({ transactions, onDelete }) {
                 <td>{t.type}</td>
                 <td>{t.category}</td>
                 <td>{t.description}</td>
-                <td>{t.amount.toFixed(2)}</td>
+                <td>€{t.amount.toFixed(2)}</td>
                 <td>{new Date(t.date).toLocaleString()}</td>
                 <td>
                   <button

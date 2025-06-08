@@ -39,8 +39,8 @@ function TransactionForm({ onAdd }) {
             value={formData.type}
             onChange={handleChange}
           >
-            <option value="INCOME">Income</option>
-            <option value="EXPENSE">Expense</option>
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
           </select>
         </div>
         <div className="mb-3">
@@ -64,7 +64,7 @@ function TransactionForm({ onAdd }) {
           />
         </div>
         <div className="mb-3">
-          <label className="form-label">Amount</label>
+          <label className="form-label">Amount €</label>
           <input
             type="number"
             className="form-control"
